@@ -12,7 +12,7 @@
  * Autoloader and dependency injection initialization for Swift Mailer.
  */
 
-if (class_exists('Swift', false)) {
+if (defined('SWIFT_REQUIRED_LOADED') || class_exists('Swift', false)) {
     return;
 }
 
